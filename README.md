@@ -1,0 +1,1 @@
+# Exercícios em C da primeira lista da disciplina Projeto de Arquivos
