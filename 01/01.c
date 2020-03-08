@@ -24,5 +24,6 @@ int main() {
             printf("%d\t+\t%d\t=\t%d\t%s\n", v[i], v[j], soma, FALSO_OU_VERDADEIRO[soma == k]);
         }
     }
+    free(v);
     return 0;
 }

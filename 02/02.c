@@ -27,5 +27,7 @@ int main() {
         printf("%d ", r[i]);
     }
     printf("]\n");
+    free(v);
+    free(r);
     return 0;
 }

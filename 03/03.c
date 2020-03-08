@@ -26,5 +26,6 @@ int main() {
         }
     } while (encontrado);
     printf("O primeiro positivo faltante é: %d\n", p);
+    free(v);
     return 0;
 }
