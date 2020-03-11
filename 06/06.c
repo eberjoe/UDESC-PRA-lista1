@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int compare(const void* a, const void* b) { 
-    return (*(int*)a - *(int*)b); 
+    return (*(int*) a - *(int*) b); 
 }
 
 int main() {
@@ -39,5 +39,7 @@ int main() {
         qsort(sub, k, sizeof(int), compare);
         printf("]\tmax:\t%d\n", sub[k - 1]);
     }
+    free(v);
+    free(sub);
     return 0;
 }

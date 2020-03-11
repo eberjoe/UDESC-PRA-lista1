@@ -10,7 +10,7 @@ int Fatorial(int n) {
 }
 
 int compare(const void* a, const void* b) { 
-    return (*(int*)a - *(int*)b); 
+    return (*(int*) a - *(int*) b); 
 }
 
 void Swap(int* a, int* b) { 
