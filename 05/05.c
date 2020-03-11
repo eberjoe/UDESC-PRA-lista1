@@ -4,7 +4,7 @@
 
 int main() {
     int n, i, *v, uns, nResutados, passos;
-    printf("Entre o numero de degraus maior que 1: ");
+    printf("Entre um numero de degraus maior que 1: ");
     scanf("%d", &n);
     passos = n / 2 + n % 2;
     nResutados = n % 2 ? passos + 1 : 2;
