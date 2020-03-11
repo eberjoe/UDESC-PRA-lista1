@@ -18,7 +18,7 @@ int main() {
     printf("]\n");
     for (i = 0; i < n; i++) {
         for (j = 0; j < n; j++)
-            produto *= (i != j)? v[j] : 1;
+            produto *= (i != j) ? v[j] : 1;
         r[i] = produto;
         produto = 1;
     }

@@ -31,7 +31,7 @@ int main() {
                 }
             }
         }
-        total += soma > 0? soma : 0;
+        total += soma > 0 ? soma : 0;
         soma = INT_MIN;
         v[imax] = INT_MIN;
         v[jmax] = INT_MIN;
@@ -57,7 +57,7 @@ int main() {
         if (v[i] > INT_MIN)
             total += v[i];
     }
-    printf("A maior soma entre elementos não adjacentes: %d\n", total);
+    printf("\nA maior soma entre elementos não adjacentes: %d\n", total);
     free(v);
     return 0;
 }
