@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 int main() {
     int *v, n, k, soma, i, j, resultado = 0;
