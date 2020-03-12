@@ -4,13 +4,22 @@
 #define MAX_LIMIT 100
 
 int main() {
-    char s[MAX_LIMIT], a[MAX_LIMIT];
-    int i, *count = calloc(MAX_LIMIT, sizeof(int)), c;
+    int i, r = 1;
+    char s[MAX_LIMIT], a[MAX_LIMIT], n[2], p;
     printf("Entre uma sequência de caracteres: ");
     fgets(s, MAX_LIMIT, stdin);
-    for (i = 0; i < strlen(s) - 1; i++){ 
-        a[i] = i == 0 ? s[i] : s[i] == a[i - 1] ? NULL : s[i];
+    p = s[0];
+    for (i = 1; i < strlen(s); i++) {
+        if (s[i] == p)
+            r++;
+        else {
+            sprintf(n, "%d", r);
+            strncat(a, n, 2);
+            strncat(a, &p, 1);
+            p = s[i];
+            r = 1;
+        }
     }
-    printf("%s", a);
+    printf("\nCompressão RLE:\n\n%s\n", a);
     return 0;
 }
